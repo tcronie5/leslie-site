@@ -803,7 +803,7 @@ h2{
     background-color: #ffffff;;
   }
 }
-@media screen and (min-width:600px){
+@media screen and (min-width:700px){
   #home{
     background-image: url("images/stacked-books-medium.png");
   }
