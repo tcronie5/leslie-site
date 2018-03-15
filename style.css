@@ -812,7 +812,6 @@ h2{
 
 
 @media screen and (min-width: 700px){
-  @supports (display: grid){
 
     #hamburger{
       display: none;
