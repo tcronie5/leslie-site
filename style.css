@@ -496,12 +496,19 @@ h1.hero-header span{
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
-    right: 20%;
+    left: -100%;
   }
+
+  85% {
+    opacity: 0.5;
+  }
+
   100% {
     opacity: 1;
-    right: 0;
+    left: 0%;
   }
+}
+
 }
 
 
