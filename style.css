@@ -381,6 +381,16 @@ p #therapy-intro{
  margin: 7px 15px 0 0;
 }
 
+#therapy-intro:first-letter{
+  font-size: 5em;
+  font-weight: bold;
+  float: left;
+  font-family: 'Playfair Display';
+  color: #2b3b62;
+ /* margin: 0 .2em 0 0 ; */
+ margin: 7px 15px 0 0;
+}
+
 #therapy-intro{
   grid-area: therapy-intro;
 }
@@ -519,6 +529,16 @@ h1.hero-header span{
 
 
 ul.content-list li::before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #2b3b62;
+  top: 10px;
+  left: -11px;
+}
+
+ul.content-list li:before{
   content: '';
   position: absolute;
   width: 5px;
