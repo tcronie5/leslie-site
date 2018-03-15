@@ -803,7 +803,7 @@ h2{
     background-color: #ffffff;;
   }
 }
-@media screen and (min-width:700px){
+@media screen and (min-width:900px){
   #home{
     background-image: url("images/stacked-books-medium.png");
   }
@@ -916,9 +916,7 @@ h2{
   }
 
   /*Home*/
-  #home{
-      background-image: url("images/stacked-books-large.png");
-  }
+
 
   .hero-header{
     font-size: 45px;
@@ -1080,6 +1078,10 @@ header{
     "therapy-intro therapy-intro therapy-intro ."
     "services specialties finances .";
   }
+
+  #home{
+      background-image: url("images/stacked-books-large.png");
+  }
 }
 
   @-webkit-keyframes fadeInRight {
@@ -1106,7 +1108,10 @@ header{
 
 
 
-
+@media screen and (min-width: 600px){
+  .hero-header{font-size: 60px;
+width: 70%}
+}
 
 
 
