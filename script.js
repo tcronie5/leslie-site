@@ -14,9 +14,13 @@ $hamburger.click(function() {
   return false;
 });
 
+$('nav a').click(function(){
+  $hamburger.toggleClass('active');
+  $nav.toggleClass('active');
+  $overlay.toggleClass('open');
+})
 
 });
-
 
 
 $('.menu li').on('click', function(){
