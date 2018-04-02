@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dr. Leslie Cooper</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leslie Cooper, Ph.D., ABPP</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-fonts.css">
+<link rel="shortcut icon" href="icons/favicon-32x32.png" type="image/x-icon">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src = "script.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4UWGupyXgUwXMaO1AvbKSAuPtErdZ6aA&callback=initMap"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -41,11 +42,15 @@
 
   <main>
     <section id = "about">
+
       <div class = "header-wrapper">
         <h1 class = "section-header">Meet Dr. Leslie Cooper</h1>
       </div>
+
       <section id = "about-grid">
+        <div class = "headshot-container">
         <img src = "images/headshot.jpg" id = "headshot" alt="Dr. Leslie Cooper">
+      </div>
         <div id = "about-content">
           <div id ="about-about">
             <h2>About</h2>
@@ -60,12 +65,12 @@
           <h2>Other Facts</h2>
           <div class = "content">
             <ul class = "content-list">
-              <li><strong>Licensed Psychologist,</strong> <br> <span class = "location">District of Columbia</em></li>
-              <li><strong>Diplomate in Clinical Psychology,</strong> <br> <span class = "location">American Board of Professional Psychology</span></li>
-              <li><strong>Former Assistant Professor of Medical/Clinical Psychology,</strong> <br> <span class = "location">Uniformed Services University of the Health Sciences (USUHS)</span></li>
-              <li><strong>Creator of the Psycho-Oncology Service,</strong> <br> <span class = "location">Walter Reed National Military Medical Center</span></li>
-              <li><strong>Commander&#39;s Coin for Outstanding Performance,</strong> <br> <span class = "location">Clinical Services Walter Reed</span></li>
-              <li><strong>Member, </strong><br> <span class = "location">American Psychological Association, <br>International Society for Traumatic Stress Studies <br> DC Psychological Association</span></li>
+              <li><span class = "role">Licensed Psychologist,</span> <br> <span class = "location">District of Columbia</em></li>
+              <li><span class = "role">Diplomate in Clinical Psychology,</span> <br> <span class = "location">American Board of Professional Psychology</span></li>
+              <li><span class = "role">Former Assistant Professor of Medical/Clinical Psychology,</span> <br> <span class = "location">Uniformed Services University of the Health Sciences (USUHS)</span></li>
+              <li><span class = "role">Creator of the Psycho-Oncology Service,</span> <br> <span class = "location">Walter Reed National Military Medical Center</span></li>
+              <li><span class = "role">Commander&#39;s Coin for Outstanding Performance,</span> <br> <span class = "location">Clinical Services Walter Reed</span></li>
+              <li><span class = "role">Member, </span><br> <span class = "location">American Psychological Association, <br>International Society for Traumatic Stress Studies <br>DC Psychological Association</span></li>
             </ul>
           </div>
         </div>
@@ -90,7 +95,8 @@
       <h1 class = "section-header">Therapy</h1>
     </div>
     <section id = "therapy-grid">
-      <p id = "therapy-intro">I do not believe that <em>one size fits all</em>. Therapy is a collaborative relationship built on trust. Whether the treatment is cognitive behavioral therapy, acceptance and commitment therapy, psychodynamic psychotherapy, supportive therapy, or other forms of intervention, the most important therapy is the one that allows a person to grow and find the life most meaningful to him or her.</p>
+      <p id = "therapy-intro"><span class = "first-letter">I</span> do not believe that <em>one size fits all</em>. Therapy is a collaborative relationship built on trust. Whether the treatment is cognitive behavioral therapy, acceptance and commitment therapy, psychodynamic psychotherapy, supportive therapy, or other forms of intervention, the most important therapy is the one that allows a person to grow and find the life most meaningful to him or her.</p>
+<div id = "therapy-content">
         <div  id = "therapy-services">
           <h2>Services</h2>
           <div class = "content">
@@ -101,6 +107,7 @@
             </ul>
           </div>
         </div>
+
 
         <div id = "therapy-specialties">
           <h2>Specialties</h2>
@@ -131,6 +138,7 @@
             </ul>
           </div>
         </div>
+              </div>
       </section>
     </section>
 
@@ -148,27 +156,40 @@
           </div>
         </div>
         <div id="map"></div>
+
+
         <div class = "contact-info">
-          <div class ="address">
+
+          <div class ="address contact-info-content">
+            <div>
             <img src = "icons/pin.png" class = "icon" id = "pin-icon">
             <h3>Address:</h3>
+              </div>
             <address> 5100 Wisconsin Avenue, NW
                       <br>
                       Suite 300
                       <br>
                       Washington, DC 20016
             </address>
+
           </div>
-          <div class ="email">
+          <div class = "contact-info-2">
+          <div class ="email contact-info-content">
+            <div>
             <img src = "icons/mail.png" class = "icon" id ="mail-icon">
+
             <h3>Email:</h3>
+            </div>
             <a href="mailto:lesliecooper23@gmail.com">lesliecooper23@gmail.com</a>
           </div>
-          <div class = "telephone">
+          <div class = "telephone contact-info-content">
+            <div>
             <img src = "icons/phone.png" class = "icon" id = "phone-icon">
             <h3>Phone:</h3>
+          </div>
             <a href="tel:301-452-7327">(301) 452-7327</a>
           </div>
+        </div>
         </div>
       </section>
     </section>

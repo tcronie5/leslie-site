@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,400i,700,700i');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,400i,700,700i'); */
 
 body{
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -9,15 +9,6 @@ body{
   overflow-x: hidden;
 }
 
-/* html{height: 100%;} */
-
-/* main{
-  padding:  0 0.5em;
-} */
-
-/* main{
-  padding: 0.5em;
-} */
 
 main > section{
   background-color: #ffffff;
@@ -40,16 +31,102 @@ a.button{
   padding-top: 5px;
   font-size: 18px;
   text-transform: uppercase;
-  /* font-weight: bold; */
   display: inline-block;
   padding-top: 18px;
-  /* background-color: rgba(171,182,185, 0.5); */
   transition: .5s;
-              /* border-color 0.5s linear; */
 }
 
 h1{
   font-size: 24px;
+}
+
+#about-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#headshot{
+  align-self: flex-start;
+}
+
+#headshot{
+ min-width: 250px;
+   margin: 0;
+
+}
+
+.headshot-container{
+  justify-self: center;
+  align-self: center;
+
+}
+
+#map{
+  width: 100%;
+  height: 400px;
+}
+
+
+#headshot{
+ min-width: 250px;
+   margin: 0;
+
+}
+
+.headshot-container{
+  justify-self: center;
+  align-self: center;
+
+}
+
+@media screen and (min-width: 600px){
+  #therapy-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #therapy-specialties, #therapy-services{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 860px){
+  #therapy-specialties, #therapy-services, #therapy-finances{
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1048px){
+  #therapy-grid, #contact-content{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 700px){
+  #about-grid{
+    flex-direction: row;
+  }
+
+  #headshot{
+    margin-top: 58px;
+    max-width: 400px;
+
+  }
+
+  .headshot-container{
+    align-self: flex-start;
+  }
+
+  #about-content{
+    width: 65%;
+    margin-left: 20px;
+  }
+
+  #therapy-intro{
+    width: 100%;
+  }
 }
 
 a.button:hover{
@@ -89,40 +166,29 @@ li{
 }
 
 
-
 /*Font*/
 /* h1, h2{ */
 h1{
   font-family: 'Playfair Display', serif;
-  /* font-weight: bold; */
   letter-spacing: 0.75px;
-
-  /* display: inline-block; */
-
   padding: 15px 0
-
 }
 
 h1.section-header{
-
   color: white;
   font-weight:300;
 }
 
 div.header-wrapper{
-  background-color: rgba(43, 59, 98, .8);
-  /* padding: 2.5px 5px; */
+  background: #2b3b62;
   width: 100%;
   height:auto;
-    margin: 0 0 50px 0;
+  margin: 0 0 50px 0;
 }
 
 h2{
-  /* color: #2b3b62; */
   font-weight: normal;
-  margin-bottom: 5px;
-  /*testing*/
-  /*experimenting with fonts*/
+  margin: 0 0 5px 0;
   font-family: 'open sans';
   text-transform: uppercase;
   font-weight: lighter;
@@ -131,9 +197,7 @@ h2{
   color: #ffffff;
   /* background-color: #2b3b62; */
   /* background-color: rgba(43, 59, 98, .8); */
-  /* background-color: rgba(120, 120, 120, .9);
-  padding: 2.5px 5px;
-  display: inline-block;; */
+  /* background-color: rgba(120, 120, 120, .9);*/
   color: #2b3b62;
 }
 
@@ -149,85 +213,37 @@ p, ul{
   color: #373737;
 }
 
-
-
 .button{
   vertical-align: middle;
 }
 
+#headshot{
+  width:100%;
 
+
+}
 
 /*Grids*/
-
-#about-grid, #therapy-grid, #contact-grid{
-  display: grid;
-  padding: 0.5em;
+ #about-grid, #therapy-grid, #contact-grid{
+  /* display: grid; */
+  padding: 0 1em;
 }
 
 #about h1, #therapy h1, #contact h1{
   padding: 10px;
 }
 
-
-
-
-
-
-
-
 /*About*/
 
-#headshot{
-  justify-self: center;
-  width: 80%;
-  max-width: 300px;
-  display: block;
-}
+
 
 span.location{
   font-style: italic;
   color: #787878;
 }
-
-
-/*About sub-grids*/
-#about-content > *{
-  display: grid;
-  grid-template-columns: minmax(min-content, flex), auto;
-  grid-template-rows: auto auto;
-}
-
-#about-about h2{
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-#about-about div{
-  grid-row: 2/3;
-  grid-column: 1/3;
-}
-
-#about-facts h2{
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-#about-facts div{
-  grid-row: 2/3;
-  grid-column: 1/3;
-}
-
-#about-qualifications h2{
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-#about-qualifications div{
-  grid-row: 2/3;
-  grid-column: 1/3;
-}
-
-
+ span.role{
+   font-weight: 400;
+ }
 
 
 #about, #therapy, #contact{
@@ -279,45 +295,6 @@ div.hero-image-container{
 }
 
 
-/**/
-#contact-grid{
-  grid-row-gap: 5px;
-}
-
-#contact-content{
-  /* grid-area: contact-content; */
-}
-
-
-
-
-#contact-content{
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-#map{
-  grid-column: 1/3;
-  grid-row:2/3;
-  z-index: 0;
-  height: 100%;
-}
-
-.contact-info{
-  grid-column: 1/3;
-  grid-row: 3/4;
-  z-index: 1;
-
-
-}
-
-
-
-#map{
-  /* grid-area: map; */
-  height: 100%;
-  width: 100%;
-}
 
 
 .icon{
@@ -325,38 +302,7 @@ div.hero-image-container{
   margin-right: 10px;
 }
 
-.contact-info div{
-  display: grid;
-  grid-template-columns: 30px auto;
-  grid-template-rows: auto auto;
-  grid-row-gap: 10px;
-}
 
-#pin, #phone, #mail{
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-div.address h3, div.telephone h3, div.email h3{
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-div.address address, div.contact-info a{
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-
-.contact-info{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.icon{
-  align-self: center;
-  /* justify-self: flex-start; */
-}
 
 div.contact-info h3{
   margin: 0;
@@ -364,15 +310,30 @@ div.contact-info h3{
 }
 
 
-
-
 /*Therapy*/
 p #therapy-intro{
   margin: 0;
 }
 
+/* span.first-letter{
+  font-size: 6em;
+  font-weight: bold;
+  margin-right: 10px;
+   /* padding: 0; */
+   /* margin-top: -0.3em;
+  float: left;
+  font-family: 'Playfair Display'; */
+  /* color: #2b3b62; */ */
+  /* padding: 0 25px 20px 0px; */
+  /* word-wrap: break-word; } */
+/* } */
+
+@supports (div::first-letter){
+
+}
+
 #therapy-intro::first-letter{
-  font-size: 5em;
+  font-size: 6em;
   font-weight: bold;
   float: left;
   font-family: 'Playfair Display';
@@ -381,8 +342,9 @@ p #therapy-intro{
  margin: 7px 15px 0 0;
 }
 
-#therapy-intro:first-letter{
-  font-size: 5em;
+
+#therapy-intro::-webkit-first-letter{
+  font-size: 6em;
   font-weight: bold;
   float: left;
   font-family: 'Playfair Display';
@@ -391,72 +353,21 @@ p #therapy-intro{
  margin: 7px 15px 0 0;
 }
 
-#therapy-intro{
-  grid-area: therapy-intro;
-}
 
-#therapy-services{
-  grid-area: services;
-}
-
-#therapy-specialties{
-  grid-area: specialties;
-}
-
-#therapy-finances{
-  grid-area: finances;
-}
-
-#therapy-grid{
-  grid-template-areas:
-  "therapy-intro"
-  "services"
-  "specialties"
-  "finances";
+div.contact-info{
+  background-color: #abb6b9;
+  color: #ffffff;;
+  width:100%;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
+  z-index:2;
+  border-radius: 0 0 5px 5px;
 }
 
 
-/*Therapy Sub-grids*/
-/* #therapy-grid > div {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-} */
 
-#therapy-services h2{
-  grid-row: 1/2;
-  grid-column: 1/2;
-  /* grid-area: h-services; */
+.email, .address{
+  margin-bottom: 10px;
 }
-
-#therapy-services div{
-  grid-row: 2/3;
-  grid-column: 1/3;
-  /* grid-area: c-services; */
-}
-
-#therapy-specialties h2{
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-#therapy-specialties div{
-  grid-row: 2/3;
-  grid-column: 1/3;
-}
-
-#therapy-finances h2{
-  grid-row: 1/2;
-  grid-column: 1/2;
-  /* grid-area: h-finances; */
-}
-
-#therapy-finances div {
-  grid-row: 2/3;
-  grid-column: 1/3;
-  /* grid-area: c-finances; */
-}
-
 
 
 #about-header{
@@ -473,15 +384,13 @@ h1.hero-header span{
   font-weight: normal;
   position: absolute;
   top: 15%;
-  /* left: -20%; */
-  left: -100%;
   margin: 0;
   width: 80%;
   padding-left: 0.5em;
-  -webkit-animation: fadeInLeft 1s ease forwards;
-          animation: fadeInLeft 1s ease forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: fadeInLeft 2s ease-in forwards;
+          animation: fadeInLeft 2s ease-in forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 
 }
 
@@ -490,11 +399,7 @@ h1.hero-header span{
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    left: -100%;
-  }
-
-  85% {
-    opacity: 0.5;
+    left: -20%;
   }
 
   100% {
@@ -519,13 +424,8 @@ h1.hero-header span{
   }
 }
 
-}
 
 
-/*testing*/
-/* div.content{
-  border-top: 1px solid #787878;
-} */
 
 
 ul.content-list li::before{
@@ -551,7 +451,8 @@ ul.content-list li:before{
 
 #home{
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 75px);
+  height: -moz-calc(100% - 75px);
   position: relative;
   background-image: url("images/stacked-books-small.png");
   background-repeat: no-repeat;
@@ -560,6 +461,7 @@ ul.content-list li:before{
   padding: 0;
   margin-bottom: 50px;
 }
+
 
 
 /*Header / Footer*/
@@ -571,12 +473,9 @@ header{
   height: 70px;
   position: relative;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #fff;
 }
 
-header.header-scrolled{
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
-}
 
 
 /*Header Logo*/
@@ -585,8 +484,6 @@ a.header-logo{
   color: rgb(43, 59, 98);
   margin-left: 20px;
   align-self: center;
-
-
 }
 
 div.main-logo{
@@ -613,6 +510,7 @@ div.sub-logo{
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease;
 }
+
 .button_container:hover {
   opacity: .7;
 }
@@ -715,25 +613,25 @@ div.button_container span {
   opacity: 0;
 }
 .overlay ul li a {
-  display: block;
+  display: inline-block;
   position: relative;
   color: #FFF;
   text-decoration: none;
   overflow: hidden;
 }
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-  width: 90%;
+  width: 100%;
 }
 .overlay ul li a:after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: -100%;
   width: 0%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 3px;
-  background: #FFF;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  height: 2px;
+  background: #FFFFFF;
   -webkit-transition: .35s;
   transition: .35s;
 }
@@ -749,20 +647,10 @@ div.button_container span {
   text-align: center;
 }
 
-
 nav ul{
   position: static;
   position: absolute;
 }
-
-
-
-
-
-
-
-
-
 
 /*Footer*/
 footer{
@@ -779,10 +667,6 @@ footer > p{
   margin: 0;
 }
 
-
-
-
-
 @media screen and (min-width: 400px){
   div.main-logo{
     font-size:20px;
@@ -795,65 +679,55 @@ footer > p{
   .hero-header{
     font-size: 40px;
     width: 90%;
-    /* left: 5%; */
+}
 
+
+  .email, .address{
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width:500px){
+  h1{
+      font-size: 30px;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
   .hero-header{
     width: 70%;
+    font-size: 45px;
   }
-}
 
-
-@media screen and (min-width:500px){
-
-h1{
-    font-size: 30px;
-}
-
-h2{
-  font-size: 24px;
-}
-
-  }
+  /* #contact-content{
+    padding-left: 1em;
+  } */
 
   #therapy-intro{
     font-size: 22px;
     margin-bottom: 50px;
   }
 
-
-
   #contact{
     padding-bottom: 3em;
     background-color: #ffffff;;
   }
 }
-@media screen and (min-width:900px){
-  #home{
-    background-image: url("images/stacked-books-medium.png");
+
+@media screen and (min-width: 600px){
+  h1{
+    font-size: 30px;
   }
 
+  .hero-header{
+    font-size: 60px;
+    width: 70%
+  }
 }
 
-
 @media screen and (min-width: 700px){
-
-    #hamburger{
-      display: none;
-    }
-
-    #headshot{
-      width: 80%;
-      min-width: 250px;
-      margin-left: 0;
-    }
-
-  #about-grid, #therapy-grid, #contact-grid{
-    padding: 0;
-  }
-
     h2{
       margin: 0;
     }
@@ -861,166 +735,75 @@ h2{
     h1{
       margin: 0 0 0 50px;
     }
-
-
-    /*About*/
-    #about-header{
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-    }
-
-    #headshot{
-      grid-row: 2 / 3;
-      align-items: flex-start;
-      align-self: flex-start;
-      margin-top: 60px;
-      max-width: 400px;
-    }
-
-    #about-content{
-      grid-row: 2 / 4;
-      grid-column: 2 / 4;
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto auto auto;
-      grid-row-gap: 1em;
-    }
-
-    #therapy-grid{
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas:
-      "therapy-intro therapy-intro therapy-intro"
-      "services services ."
-      "specialties specialties . "
-      "finances finances finances";
-    }
-
-
-
-
-
-    .icon{
-      align-self: center;
-      justify-self: center;
-    }
-
-    .contact-info > div{
-      align-self: center;
-    }
-}
-
-
-@media screen and (min-width: 600px){
-  h1{
-  font-size: 30px;
-  }
 }
 
 @media screen and (min-width:800px){
-
   /*Universal*/
   main{
     width: 90%;
     max-width: 1350px;
     margin: 0 auto;
     padding: 0;
-    /*test*/
-    /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1); */
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 
 
+  #about-grid, #therapy-grid, #contact-grid, #contact-content{
+   padding: 0;
+ }
+
+  #hamburger{
+    display: none;
+  }
+
+  .overlay{
+    background-color: #fff;
+  }
 
   h1{
   font-size: 36px;
   }
 
-  #about-grid, #therapy-grid{
+  #about-grid, #therapy-grid, #contact-content{
       margin: 0 50px;
-      grid-row-gap: 15px;
   }
 
   /*Home*/
-
-
   .hero-header{
-    font-size: 45px;
     padding: 0;
     width: 60%;
-    margin-left: 10%;
+    margin-left: 5%;
     top: 18%;
   }
 
   .button{
-    margin-left: 5%;;
+    /* margin-left: 10%;; */
   }
-
-
-  /*About*/
-  #about-grid{
-    grid-template-rows:   auto auto;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 20px;
-    /* padding: 0 4em; */
-  }
-
-
-
-  /*Contact*/
-  #contact-grid{
-    grid-template-columns: 3fr minmax(300px, 400px);
-    grid-template-rows:  auto auto auto;
-    /* grid-template-areas:
-    "contact-content contact-content"
-    "map map"
-    "contact-info contact-info"; */
-  }
-
-  #contact-content{
-    margin-left: 50px;
-  }
-
-#therapy-grid{
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-
-  grid-template-areas:
-  "therapy-intro therapy-intro"
-  "services specialties"
-  "finances finances";
-}
-
 
   .overlay{
     visibility: visible;
     opacity: 1;
     overflow: visible;
     z-index: 2000;
-    /* position: relative; */
     width: 60%;
     position:relative;
-
   }
 
   nav.overlay-menu{
     position: relative;
   }
 
-.overlay ul li {
+  .overlay ul li {
     opacity: 1;
     font-size: 20px;
     margin: 0;
     padding: 0;
-    /* align-self:center; */
     position: none;
   }
 
   .overlay ul li a{
-color: #787878;
-
-      /* position: none; */
-    }
+    color: #787878;
+  }
 
   .overlay ul{
     display: flex;
@@ -1031,86 +814,170 @@ color: #787878;
 
   nav{
     width: 100%;
-
   }
 
-header{
-  display: flex;
-  height: 75px;
+  header{
+    display: flex;
+    height: 75px;
+  }
 
-}
+  .header-logo{
+    align-self: center;
+    margin-left: 20px;
+    width: 35%;
+  }
 
-.header-logo{
-  align-self: center;
-  margin-left: 20px;
-  width: 35%;
-}
-
-.overlay ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 2px;
-  background: #2b3b62;
-  -webkit-transition: .35s;
-  transition: .35s;
-}
-
-}
-
-@media screen and (min-width: 850px){
-  .hero-header{
-    font-size: 45px;
+  .overlay ul li a:after {
+    content: '';
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: -100%; */
+    /* width: 0%; */
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    height: 1.5px;
+    background: #2b3b62;
+    /* -webkit-transition: .35s;
+    transition: .35s; */
   }
 }
 
-@media screen and (min-width: 900px){
-  /*Contact*/
-  .contact-info{
-    /* grid-template-columns: repeat (6, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas:
-    "mail-icon email email phone-icon phone phone"
-    ". pin-icon address address . ."; */
+@media screen and (min-width:900px){
+  #home{
+    background-image: url("images/stacked-books-medium.png");
   }
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 1000px){
-  #therapy-grid{
-    grid-template-columns: auto auto auto 25%;
-    grid-template-rows: auto auto;
-    /* grid-column-gap: 5rem; */
-    grid-template-areas:
-    "therapy-intro therapy-intro therapy-intro therapy-intro"
-    "services specialties finances finances";
+  .hero-header{
+    font-size: 65px;
+  }
+
+  a.button{
+    top: 0%;
+    top: 85%;
+  }
+
+  .hero-header{
+    font-size: 55px;
   }
 }
+ .contact-info{
+    height:  auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding: 1em 0;
+    justify-content: center;
+  }
+
+  .contact-info > div{
+    width: 100%;
+    margin-left: 1em;
+  }
+
+  .email, .address{
+    margin-bottom: 1em;
+  }
+
+  div.contact-info a, div.contact-info address{
+    margin: 5px 0 0 35px;
+  }
+
+  div.contact-info-content > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+
+@media screen and (min-width: 530px){
+    div.contact-info{
+      flex-direction: row;
+      height: 125px;
+    }
+
+  div.contact-info-2{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@keyframes fadeUp{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    bottom: -10%;
+  }
+}
+
+@media screen and (min-width: 800px){
+  #contact-grid{
+    position: relative;
+  }
+
+  div.contact-info{
+    position: absolute;
+    z-index: 2;
+    width: 70%;
+    height: 125px;
+    bottom: -20%;
+    right: 27%;
+    max-width: 600px;
+    opacity: 0;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .contact-scrolled{
+    animation: fadeUp 0.5s cubic-bezier(.17,.67,.63,1.17) 0.5s 1 forwards;
+  }
+
+  #contact{
+    padding-bottom: 10em;
+  }
+
+  #map{
+    z-index: 1;
+  }
+}
+
+
+
 
 @media screen and (min-width: 1200px){
-  #therapy-grid{
-    /* grid-column-gap: 5rem; */
-    grid-template-areas:
-    "therapy-intro therapy-intro therapy-intro ."
-    "services specialties finances .";
+  #home{
+    background-image: url("images/stacked-books-large.png");
   }
 
-  #home{
-      background-image: url("images/stacked-books-large.png");
+  a.button{
+    top: 70%;
+  }
+
+  .hero-header{
+    width: 50%;
   }
 }
 
-  @-webkit-keyframes fadeInRight {
+@media screen and (min-width: 1400px){
+  .hero-header{
+    font-size: 70px;
+    top: 15%;
+    width: 50%;
+  }
+
+  a.button{
+    top: 70%;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
     0% {
       opacity: 0;
       left: 20%;
@@ -1133,345 +1000,14 @@ header{
   }
 
 
-
-@media screen and (min-width: 600px){
-  .hero-header{font-size: 60px;
-width: 70%}
+header.fixed{
+  position: fixed;
+  transform: translate(0, -200px);
+  opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-/* .telephone, .address, .email{
-
-display: flex;
-} */
-
-
-/* div.address{
-  grid-column: 1/2;
-  grid-row: 1/3;
+header.in-view{
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease;
 }
-
-div.telephone{
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-div.email{
-  grid-column: 2/3;
-  grid-row: 2/3;
-} */
-
-
-
-#contact-grid{
-  grid-template-columns: 100%;
-  grid-template-rows: auto 400px auto;
-}
-
-div.contact-info{
-  background-color: #abb6b9;
-  color: #ffffff;;
-  width:100%;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
-  z-index:2;
-}
-
-div.contact-info{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  justify-content: center;
-  padding: 15px 0;
-}
-
-@media screen and (min-width: 400px){
-  div.contact-info{
-    /* grid-template-columns: repeat(2, minmax(auto, 70px));
-    grid-template-rows: auto auto; */
-    justify-content: space-evenly;
-  }
-
-  .address{
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  .telephone{
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .email{
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .email, .address{
-    margin-bottom: 0;
-  }
-}
-
-
-@media screen and (min-width: 600px){
-  #contact-grid{
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto repeat(4, 100px) 50px 50px;
-  }
-
-  #contact-content{
-    grid-column: 1/6;
-    grid-row:1/2;
-  }
-  #map{
-    grid-column: 1/6;
-    grid-row:2/6;
-  }
-
-  .contact-info{
-    grid-column: 2/5;
-    grid-row: 5/8;
-  }
-
-  .address{
-    align-self: flex-start;
-    justify-self: flex-start;
-  }
-  }
-
-
-
-
-@media screen and (min-width: 1000px){
-  .hero-header{
-    font-size: 60px;
-    top: 10%;
-  }
-
-  a.button{
-    top: 0%;
-    top: 85%;
-  }
-
-  .contact-info{
-      height:  auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-  }
-
-  #contact-grid{
-    grid-template-columns: repeat(8, 1fr) 20px 1fr;
-    grid-template-rows: auto repeat(7, 50px) 75px;
-    /* grid-template-areas:
-    "contact-content contact-content contact-content ."
-    "map map map contact-info"; */
-}
-
-  #contact-content{
-    grid-column: 1/10;
-    grid-row: 1/2;
-  }
-
-  #map{
-    grid-column: 1/11;
-    grid-row:2/9;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-        grid-row-gap: 0;
-  }
-
-  .contact-info{
-    grid-column: 5/10;
-    grid-row: 7/10;
-    z-index: 1;
-
-  }
-  .contact-info > div{
-    align-self: flex-start;
-    justify-self: flex-start;
-  }
-
-  .contact-info{
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-}
-
-.email, .address{
-  margin-bottom: 10px;
-}
-
-
-
-
-/*mobile screens*/
-/* div.contact-info{
-  justify-content: space-around;
-  grid-template-columns: auto;
-  grid-template-rows: auto 400px auto;
-}
-#contact-content{
-  grid-row: 1/2;
-}
-#map{
-  grid-row: 2/3;
-}
-
-div.contact-info{
-  grid-row: 3/4;
-
-}
-
-.contact-info div{
-  display: grid;
-  grid-template-columns: 30px auto;
-  grid-template-rows: 30px auto;
-}
-
-.contact-info{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-}
-
-.address{
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.telephone{
-  grid-column: 1/2;
-  grid-row:2/3;
-}
-
-
-
-@media screen and (min-width: 1px){
-  .contact-info div{
-    grid-template-columns: 30px auto auto;
-    grid-template-rows: auto;
-  }
-
-
-
-  .icon{
-    grid-column: 1/2;
-      grid-row: 1/2;
-  }
-div.contact-info h3{
-  grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-div.contact-info address, div.contact-info a{
-  grid-column: 3/4;
-  grid-row: 1/2;
-  justify-self: flex-start;
-}
-
-.contact-info{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-
-}
-
-.address{
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.telephone{
-  grid-column: 1/2;
-  grid-row: 2/3;
-
-}
-
-.email{
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-}
-
-@media screen and (min-width: 500px){
-  .contact-info div{
-    grid-template-columns: 30px auto;
-    grid-template-rows: auto;
-}
-    .icon{
-      grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: flex-start;
-        align-self: flex-start;    }
-
-
-  div.contact-info h3{
-    grid-column: 2/3;
-      grid-row: 1/2;
-  }
-
-  div.contact-info address, div.contact-info a{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    justify-self: flex-start;
-  }
-
-
-
-
-  } */
-
-
-/*mobile view*/
-
-.contact-info{
-  grid-row-gap: 10px;
-}
-
-
-@media screen and (min-width: 500px){
-  .hero-header{
-    font-size: 45px;
-  }
-}
-
-@media screen and (min-width: 1000px){
-  .hero-header{
-    font-size: 55px;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  .hero-header{
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1400px){
-  .hero-header{
-    font-size: 70px;
-    top: 15%;
-    width: 50%;
-  }
-
-  a.button{
-    top: 70%;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  a.button{
-    top: 70%;
-}}
