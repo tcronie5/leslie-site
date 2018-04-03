@@ -51,7 +51,9 @@ h1{
 }
 
 #headshot{
- min-width: 250px;
+ max-width: 250px;
+ /* width: 250px; */
+ width: 100%;
    margin: 0;
 
 }
@@ -171,7 +173,11 @@ li{
 h1{
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.75px;
-  padding: 15px 0
+  /* padding: 15px 0 */
+}
+
+.header-wrapper{
+  padding: 0;
 }
 
 h1.section-header{
@@ -183,7 +189,7 @@ div.header-wrapper{
   background: #2b3b62;
   width: 100%;
   height:auto;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
 }
 
 h2{
@@ -217,11 +223,8 @@ p, ul{
   vertical-align: middle;
 }
 
-#headshot{
-  width:100%;
 
 
-}
 
 /*Grids*/
  #about-grid, #therapy-grid, #contact-grid{
@@ -230,8 +233,10 @@ p, ul{
 }
 
 #about h1, #therapy h1, #contact h1{
-  padding: 10px;
+  padding: 10px 0 10px 1em;
 }
+
+
 
 /*About*/
 
@@ -256,7 +261,10 @@ h1{
 
 #therapy-intro{
   margin-top: 0;
+  line-height: 1.5em;
+   /* margin: 0 .25em 0; */
 }
+
 
 #therapy-services >  h2, #contact-content > h2{
   margin-top: 0;
@@ -275,6 +283,10 @@ color: #ffffff;
 font-style: normal;
 font-family: 'open sans', sans-serif;
 font-weight: lighter;
+}
+
+#contact-content > div.content{
+  margin-bottom: 50px;
 }
 
 
@@ -339,7 +351,12 @@ p #therapy-intro{
   font-family: 'Playfair Display';
   color: #2b3b62;
  /* margin: 0 .2em 0 0 ; */
- margin: 7px 15px 0 0;
+ /* margin: 7px 15px 0 0; */
+    font-size: 5em;
+    float: left;
+    line-height: .75em;
+    display: inline-block;
+    margin: 0 .2em 0;
 }
 
 
@@ -384,11 +401,12 @@ h1.hero-header span{
   font-weight: normal;
   position: absolute;
   top: 15%;
-  margin: 0;
+  margin-left: 5%;
   width: 80%;
-  padding-left: 0.5em;
-  -webkit-animation: fadeInLeft 2s ease-in forwards;
-          animation: fadeInLeft 2s ease-in forwards;
+
+  /* padding-left: 0.5em; */
+  -webkit-animation: fadeInLeft 2s ease-in-out forwards;
+          animation: fadeInLeft 2s ease-in-out forwards;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 
@@ -399,7 +417,11 @@ h1.hero-header span{
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    left: -20%;
+    left: -30%;
+  }
+
+  80%{
+    /* opacity: 0.5; */
   }
 
   100% {
@@ -482,7 +504,7 @@ header{
 a.header-logo{
   text-decoration: none!important;
   color: rgb(43, 59, 98);
-  margin-left: 20px;
+  margin-left: 5%;
   align-self: center;
 }
 
@@ -734,7 +756,13 @@ footer > p{
 
     h1{
       margin: 0 0 0 50px;
+
     }
+
+    #about h1, #therapy h1, #contact h1{
+      padding: 10px 0 10px 0em;
+    }
+
 }
 
 @media screen and (min-width:800px){
@@ -787,6 +815,7 @@ footer > p{
     z-index: 2000;
     width: 60%;
     position:relative;
+    margin-right: 5%;
   }
 
   nav.overlay-menu{
@@ -823,7 +852,7 @@ footer > p{
 
   .header-logo{
     align-self: center;
-    margin-left: 20px;
+    margin-left: 5%;
     width: 35%;
   }
 
