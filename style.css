@@ -1040,7 +1040,3 @@ header.in-view{
   opacity: 1;
   transition: transform 1s ease, opacity 1s ease;
 }
-
-#therapy-grid > div, #therapy-grid > p, #contact-grid > div, #about-grid > div{
-  margin-bottom: 2em;
-}
