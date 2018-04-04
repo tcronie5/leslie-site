@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'open_sansitalic';
-    src: url('fonts/opensans-italic-webfont.woff2') format('woff2'),
-         url('fonts/opensans-italic-webfont.woff') format('woff');
+    src: url('/fonts/opensans-italic-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'open_sanslight';
-    src: url('fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('fonts/opensans-light-webfont.woff') format('woff');
+    src: url('/fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'open_sanslight_italic';
-    src: url('fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
-         url('fonts/opensans-lightitalic-webfont.woff') format('woff');
+    src: url('/fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('fonts/opensans-regular-webfont.woff') format('woff');
+    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: 'playfair_displayblack';
-    src: url('fonts/playfairdisplay-black-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-black-webfont.woff') format('woff');
+    src: url('/fonts/playfairdisplay-black-webfont.woff2') format('woff2'),
+         url('/fonts/playfairdisplay-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -64,8 +64,8 @@
 
 @font-face {
     font-family: 'playfair_displayblack_italic';
-    src: url('fonts/playfairdisplay-blackitalic-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-blackitalic-webfont.woff') format('woff');
+    src: url('/fonts/playfairdisplay-blackitalic-webfont.woff2') format('woff2'),
+         url('/fonts/playfairdisplay-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -76,8 +76,8 @@
 
 @font-face {
     font-family: 'playfair_displaybold';
-    src: url('fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-bold-webfont.woff') format('woff');
+    src: url('/fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('/fonts/playfairdisplay-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -88,8 +88,8 @@
 
 @font-face {
     font-family: 'playfair_displaybold_italic';
-    src: url('fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-bolditalic-webfont.woff') format('woff');
+    src: url('/fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/playfairdisplay-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -100,8 +100,8 @@
 
 @font-face {
     font-family: 'playfair_displayitalic';
-    src: url('fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-italic-webfont.woff') format('woff');
+    src: url('/fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('/fonts/playfairdisplay-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -112,8 +112,8 @@
 
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-regular-webfont.woff') format('woff');
+    src: url('/fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('/fonts/playfairdisplay-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
