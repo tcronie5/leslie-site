@@ -733,12 +733,12 @@ footer > p{
     }
 
     h1{
-      margin: 0 0 0 50px;
+      /* margin: 0 0 0 50px; */
 
     }
 
     #about h1, #therapy h1, #contact h1{
-      padding: 15px 0 15px 0em;
+      padding: 20px 0 20px 0em;
     }
 
 }
