@@ -757,6 +757,10 @@ footer > p{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 
+  #about h1, #therapy h1, #contact h1{
+    padding: 20px 0 20px 1em;
+  }
+
 
   #about-grid, #therapy-grid, #contact-grid, #contact-content{
    padding: 0;
