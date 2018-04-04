@@ -229,7 +229,7 @@ p, ul{
 }
 
 #about h1, #therapy h1, #contact h1{
-  padding: 15px 0 15px 1em;
+  padding: 10px 0 10px 1em;
 }
 
 
@@ -738,7 +738,7 @@ footer > p{
     }
 
     #about h1, #therapy h1, #contact h1{
-      padding: 10px 0 10px 0em;
+      padding: 15px 0 15px 0em;
     }
 
 }
