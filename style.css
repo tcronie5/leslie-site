@@ -749,7 +749,7 @@ footer > p{
 
   .hero-header{
     font-size: 60px;
-    width: 70%
+    width: 80%;
   }
 }
 
@@ -892,7 +892,7 @@ footer > p{
 
   a.button{
     top: 0%;
-    top: 85%;
+    top: 90%;
   }
 
   .hero-header{
@@ -993,9 +993,7 @@ footer > p{
     background-image: url("images/stacked-books-large.png");
   }
 
-  a.button{
-    top: 70%;
-  }
+
 
   .hero-header{
     width: 50%;
@@ -1009,9 +1007,7 @@ footer > p{
     width: 50%;
   }
 
-  a.button{
-    top: 70%;
-  }
+
 }
 
 @-webkit-keyframes fadeInRight {
