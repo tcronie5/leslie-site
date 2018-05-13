@@ -331,7 +331,7 @@ p #therapy-intro{
 } */
 
 div.contact-info{
-  background-color: #373737;
+  background-color: #9b9b9b;
   color: #ffffff;;
   width:100%;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
@@ -437,6 +437,7 @@ ul.content-list li:before{
   line-height: 175%;
   padding: 2px 0;
   width: 90%;
+  max-width: 700px;
 }
 span.header-wrapper{
   display: inline;
@@ -795,7 +796,7 @@ footer a{
   .hero-header{
     padding: 0;
     margin-left: 5%;
-    max-width: 900px;
+    max-width: 700px;
   }
 
   .overlay{
@@ -863,6 +864,12 @@ footer a{
   }
 }
 
+@media screen and (min-width:1450px){
+  .hero-header{
+      width: 55%;
+  }
+}
+
 
  .contact-info{
     height:  auto;
@@ -923,7 +930,7 @@ footer a{
 @media screen and (min-width: 700px){
   .hero-header{
     font-size: 50px;
-      width: 75%;
+      width: 60%;
   }
 
 
